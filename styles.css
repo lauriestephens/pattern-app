@@ -1,0 +1,9 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  svg {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+  }
+  
