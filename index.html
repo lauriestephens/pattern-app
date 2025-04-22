@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sewing Pattern Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <h1>Pattern Generator</h1>
+
+  <label>
+    Bust:
+    <input id="bust" type="number" placeholder="Enter bust size" />
+  </label>
+
+  <label>
+    Units:
+    <select id="units">
+      <option value="cm" selected>cm</option>
+      <option value="in">in</option>
+    </select>
+  </label>
+
+  <button onclick="drawPattern()">Draw</button>
+  <button onclick="exportAsSVG()">Export as SVG</button>
+  <button onclick="exportAsPDF()">Export as PDF</button>
+
+  <svg id="pattern" width="21cm" height="29.7cm" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg"></svg>
+
+  <script src="script.js"></script>
+</body>
+</html>
